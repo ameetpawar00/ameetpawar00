@@ -1,0 +1,137 @@
+﻿/*All Colors */
+
+.blue
+{
+text-shadow: none;
+background-color: #4d90fe;
+}
+.blue:hover
+{
+background:#0362fd;	
+}
+.black
+{
+color: white;
+text-shadow: none;
+background-color: #555555;
+}
+.black:hover
+{
+background-color: #222222 !important;
+color: #fff !important;
+}
+.purple 
+{
+color: white;
+text-shadow: none;
+background-color: #852b99;
+}
+.purple:hover
+{
+background-color: #6d1b81 !important;
+color: #fff !important;
+} 
+.red
+{
+color: white;
+text-shadow: none;
+background-color: #d84a38;
+}
+.red:hover
+{
+background-color: #bb2413 !important;
+color: #fff !important;
+}
+.green
+{
+color: white;
+text-shadow: none;
+background-color: #35aa47;
+}
+.green:hover
+{
+background-color: #1d943b !important;
+color: #fff !important;
+}
+.gray
+{
+color: #000;
+text-shadow: none;
+background-color: #e5e5e5;
+}
+.gray:hover
+{
+color: #333333;
+background-color: #d8d8d8 !important;
+}
+.success
+{
+color: #468847;
+background-color: #dff0d8;
+border-color: #d6e9c6;
+}
+.warning
+{
+color: #468847;
+background-color: #fcf8e3;
+border-color: #fbeed5;
+}
+.info 
+{
+color: #3a87ad;
+background-color: #d9edf7;
+border-color: #bce8f1;
+}
+.error 
+{
+color: #b94a48;
+background-color: #f2dede;
+border-color: #eed3d7;
+}
+
+.yellow
+{
+color: #fff;
+text-shadow: none;
+background-color: #fcb322;
+}
+.yellow:hover
+{
+color: #333333;
+background-color: #eca22e !important;
+}
+.blue-border
+{
+		border: 1px solid #4d90fe;
+
+}
+.green-border
+{
+	border: 1px solid #35aa47;
+
+}
+.yellow-border
+{
+	border: 1px solid #fcb322;
+
+}
+.red-border
+{
+	border: 1px solid #d84a38;
+
+}
+.purple-border
+{
+	border: 1px solid #852b99;
+
+}
+.black-border
+{
+	border: 1px solid #555555;
+
+}
+.gray-border
+{
+	border: 1px solid #e5e5e5;
+	
+}

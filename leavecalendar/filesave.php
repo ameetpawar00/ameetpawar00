@@ -1,0 +1,59 @@
+<?php 
+include('../include/config.php');
+require_once ('../Excel/reader.php');
+if(isset($_POST['submit']))
+{
+	$data = new Spreadsheet_Excel_Reader();
+	$data->setOutputEncoding('CP1251');
+	$name = $_FILES['uploadfile']['name'] ;
+	$chkExt = explode(".",$name);
+	if($chkExt[1] == "xls")
+	{
+		$target = "files/".$name;
+		move_uploaded_file($_FILES['uploadfile']['tmp_name'],$target);
+		
+		$data->read($target);
+		  for ($i = 1; $i <= $data->sheets[0]['numRows']; $i++)
+		   {
+		 $year =$data->sheets[0]['cells'][$i][1];
+		 $event =$data->sheets[0]['cells'][$i][2];
+		  $dates=$data->sheets[0]['cells'][$i][3];
+		
+		 $description=$data->sheets[0]['cells'][$i][4];
+		 if($dates!="Date")
+		 {
+			  
+			  $brea=explode("/",$dates);
+			// print_r($brea);
+			 
+			$d=$brea[0];
+			$m= $brea[1];
+			$y= $brea[2];
+			$date=date_create("$y-$m-$d");
+			date_sub($date,date_interval_create_from_date_string("1 days"));
+			 $daat=date_format($date,"d/m/Y");
+		
+		 }
+				if($year != "Year")
+				{
+				$sql = "INSERT INTO `leavecalendar`( `year`, `date`, `event`, `description`, `createdate`, `updatedate`, `updatedby`) VALUES ('$year', STR_TO_DATE('$daat', '%d/%m/%Y'), '$event', '$description',  '$datetime', '$datetime', '$hrmloggedid')";
+				//$sql = "DELETE FROM `leavecalendar` WHERE 1";
+				 mysql_query($sql,$con) or die(mysql_error());
+		
+				}
+			}
+			$output = '<div class="sucessResp">SuccessFully Uploaded</div>';
+			unlink($target);
+	}
+	else
+	{
+	$output = '<div class="sucessResp">Please Download and Upload Sample File</div>';
+	}  
+}  
+//echo $output;
+?>
+ <script type="text/javascript">
+      window.parent.document.getElementById('couResp').innerHTML='<?php echo $output;?>';
+</script>
+
+

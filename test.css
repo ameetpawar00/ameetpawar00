@@ -1,0 +1,43 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'PTSansRegular';
+	src: url('../fonts/pts55f.eot');
+	src: url('../fonts/pts55f.eot') format('embedded-opentype'),  url('../fonts/pts55f.woff') format('woff'),  url('../fonts/pts55f.ttf') format('truetype'),  url('../fonts/pts55f.svg#PTSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'AaarghNormal';
+    src: url('../fonts/aaargh-normal.eot');
+    src: url('../fonts/aaargh-normal.eot') format('embedded-opentype'),
+         url('../fonts/aaargh-normal.woff') format('woff'),
+         url('../fonts/aaargh-normal.ttf') format('truetype'),
+         url('../fonts/aaargh-normal.svg#AaarghNormal') format('svg');
+}
+@font-face {
+    font-family: 'TrebuchetMSRegular';
+    src: url('../fonts/trebuc.eot');
+    src: url('../fonts/trebuc.eot') format('embedded-opentype'),
+         url('../fonts/trebuc.woff') format('woff'),
+         url('../fonts/trebuc.ttf') format('truetype'),
+         url('../fonts/trebuc.svg#TrebuchetMSRegular') format('svg');
+}
+.cl {
+	clear:both;
+}
+.fr {
+	float:right;
+}
+.fl {
+	float:left;
+}
+a {
+	font:normal normal 12px Arial, Helvetica, sans-serif;
+	color:#0000;
+	text-decoration:none;
+}
+h4 {margin:0;}
+img {border:0;}
+h1 {
+	font:normal 600 39px Arial, Helvetica, sans-serif;
+	color:#fff;
+	 /* text-shadow: 0 

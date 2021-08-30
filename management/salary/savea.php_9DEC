@@ -1,0 +1,70 @@
+<?php
+include("../../include/conFig.php");
+$total = 0;
+$valto = $_POST['valto'];
+$valto = explode("*$*$*",$valto);
+$eid = $_GET['eid'];
+$id = $_GET['id'];
+$mnth = $_GET['month'];
+$leaverecords = $_GET['leaverecords'];
+if(isset($_COOKIE['selectedYear']))
+{
+$cYear  = $_COOKIE['selectedYear'];
+}
+else
+{
+$cYear = date("Y");
+}
+foreach($valto as $val)
+{
+$val = str_ireplace("'","\'",$val);
+$post[] .= $val;
+}
+$Absent =  $post[3] - $post[23];
+$totalAbsent = $post[3]+$post[4];
+if($totalAbsent <= 2)
+{
+$att_allow = $post[14];
+}
+else if($totalAbsent > 2)
+{
+$att_allow = 0;
+}
+
+$deduction = $post[7]+$post[5];
+$totaldays = $post[0];
+$present = $post[1]-($post[3]+$post[4]);
+$gross = ($post[9]+$post[10]+$post[11]+$post[12]+$post[13]+$att_allow+$post[15]+$post[16]+$post[17]+$post[18]) - $post[19];
+$total = $deduction-$gross;
+$total = str_ireplace('-','',$total);
+
+
+if($post[21] == 'Deduct')
+{
+$total = $total-$post[20];
+}
+else if($post[21] == 'Add')
+{
+$total = $total+$post[20];
+}
+$total = str_ireplace('-','',$total);
+if($eid != "")
+{
+//[0] => 31 [1] => 31 [2] => 28 [3] => 3 [4] => 0 [5] => 0 [6] => 0 [7] => 600 [8] => 0 [9] => 6200 [10] => 800 [11] => 2000 [12] => 3000 [13] => 1800 [14] => 1000 [15] => 0 [16] => 0 [17] => 0 [18] => 0 [19] => 500 [20] => 0 [21] => Add [22] => 0
+//echo "INSERT INTO `salaryslip`(`year`,`employee`, `month`,  `totaldays`, `present`, `absent`,`leave`, `gross`, `atten_allow`, `conveyance`, `Med_allow`, `kpi`, `overachieve`, `insurance`, `total`, `createdate`, `updatedate`, `updatedby`, `status`,`mode`,`deduction`,`workingdays`) VALUES ('$cYear','$eid','$mnth','$post[0]','$post[1]','$post[17]','$post[3]','$post[4]','$post[5]','$post[6]','$post[7]','$post[8]','$post[9]','$post[10]','$post[11]','$datetime','$datetime','$hrmloggedid','1','$post[12]','$post[13]','$post[14]')";
+mysql_query("INSERT INTO `salaryslip`(`employee`, `month`, `year`, `basic`, `con_allow`, `spec_allow`, `other_allow`, `perf_allow`, `att_allow`, `perf_Bonus`, `train_allow`, `travel_allow`, `add_earning`, `PF`, `leave`, `workingdays`, `deduction`, `totaldays`, `present`, `absent`, `total`, `mode`, `createdate`, `updatedate`, `updatedby`, `adjustment`,`latecomes`,`leaveBalance`,`latecomesmins`) VALUES ('$eid','$mnth','$cYear','$post[9]','$post[10]','$post[11]','$post[12]','$post[13]','$att_allow','$post[15]','$post[16]','$post[17]','$post[18]','$post[19]','$post[3]','$post[1]','$deduction','$totaldays','$present','$post[4]','$total','$post[21]','$datetime','$datetime','$hrmloggedid','$post[20]','$post[5]','$post[23]','$post[24]')",$con) or die(mysql_error());
+//mysql_query("UPDATE `leaverecord` SET `leavebalance` = '$leaverecords' WHERE `userid` = '$eid'",$con) or die(mysql_error());
+$id = mysql_insert_id();
+$output = "Salary Successfully Added";
+}
+else
+{
+$sql = "UPDATE `salaryslip` SET `basic`='$post[9]',`con_allow`='$post[10]',`spec_allow`='$post[11]',`other_allow`='$post[12]',`perf_allow`='$post[13]',`att_allow`='$att_allow',`perf_Bonus`='$post[15]',`train_allow`='$post[16]',`travel_allow`='$post[17]',`add_earning`='$post[18]',`PF`='$post[19]',`leave`='$post[3]',`workingdays`='$post[1]',`deduction`='$deduction',`totaldays`='$totaldays',`present`='$present',`absent`='$post[4]',`total`='$total',`mode`='$post[21]',`createdate`='$datetime',`updatedate`='$datetime',`updatedby`='$hrmloggedid',`adjustment`='$post[20]',`latecomes`='$post[5]',`leaveBalance`='$post[23]',`latecomesmins`='$post[24]' WHERE `id` = '$id'";
+mysql_query($sql,$con) or die(mysql_error());
+//mysql_query("UPDATE `leaverecord` SET `leavebalance` = '$leaverecords' WHERE `userid` = '$eid'",$con) or die(mysql_error());
+
+$output = "Salary Successfully Updated";
+}
+header("Location: http://192.168.1.252/hrm/employee/savesalaryslip.php?id=$id&month=$mnth&year=$cYear");
+
+?>

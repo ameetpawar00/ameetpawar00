@@ -1,0 +1,51 @@
+<?php
+include("connection.php");
+
+if(isset($_POST['contact']))
+{
+$name = $_POST['name'];
+$email = $_POST['email'];
+$mobile = $_POST['mobile'];
+$query = $_POST['query'];
+		if($name == "" || $email == "" || $mobile == "" || $query == "" )
+		{
+			$error="Please Fill All The Fields Marks With *";
+		}
+		
+	else
+		{
+			if (strlen($mobile) != 10)
+			{
+			$error="Please Fill A Valid Mobile Number";
+			} 
+	else
+		{
+			if(!preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", $email))
+			{
+			$error="Please Fill A Valid Email Address";
+			}
+	else
+		{
+											
+		
+		$mailmessage = "<strong>Dear Sir/Mam,</strong> <br/>"."<strong>Mail Send by </strong>".$name."<br/><strong>Email is </strong>".$email."<strong><br/>Mobile No. </strong>".$mobile ;
+								//	echo $mailmessage ;
+									$headers = "From: Htm<".$email.">\r\n" . 
+							        'Reply-to: '.$name."<".$email.">"."\r\n" . 
+							        'X-Mailer: PHP/' . phpversion() . "\r\n" . 
+							        "MIME-Version: 1.0\r\n" . 
+							        "Content-Type: text/html; charset=utf-8\r\n" . 
+							        "Content-Transfer-Encoding: 8bit\r\n\r\n";  
+									 $subject="Contact Us";
+									$to= "gtelemarket@gmail.com";
+									mail($to,$subject,$mailmessage ,$headers);
+								$error="Contact Submitted";
+		
+		
+		$_POST = " ";
+		}						 
+	}									 
+}
+}	
+
+?>								 

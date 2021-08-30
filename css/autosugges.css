@@ -1,0 +1,54 @@
+﻿.suggest
+{
+	background:#eee;
+	height:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	max-height:150px;
+	width:212px;
+	position:absolute;
+	top:30px;
+	left:0px;
+	z-index:200000000
+}
+.selectedName
+{
+	background:#FFFFCC;
+	color:#222;
+}
+.unselectedName
+{
+	background:#eee;
+	color:#222;
+}
+.unselectedName:hover
+{
+	background:#FFFFCC;
+	color:#222;
+}
+.fetch-auto
+{
+	color:#222;
+	width:100%;
+	border:1px #f0f0f0 solid;
+}
+.fetch-auto tr td
+{
+	border-bottom:1px #ddd solid;
+}
+.hideInput
+{
+	background:transparent;
+	border:0px;
+	outline:none;
+	 -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+   -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  cursor:pointer;
+}

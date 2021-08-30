@@ -1,0 +1,379 @@
+﻿/*Icons */
+.dependent
+{
+	background:transparent url('../icons/dependent.png') no-repeat scroll left bottom;
+	height:20px;
+	width:25px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.salary
+{
+	background:transparent url('../icons/icon18.png') no-repeat scroll left bottom;
+	height:20px;
+	width:25px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.experience
+{
+	background:transparent url('../icons/icon126.png') no-repeat scroll left bottom;
+	height:20px;
+	width:25px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.education
+{
+	background:transparent url('../icons/icon26.png') no-repeat scroll left bottom;
+	height:20px;
+	width:25px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.changepassword
+{
+	background:transparent url('../icons/changepassword.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.editprofile
+{
+	background:transparent url('../icons/editprofile.png') no-repeat scroll left bottom;
+	height:20px;
+	width:25px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.master
+{
+	background:transparent url('../icons/working.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+.planner
+{
+	background:transparent url('../icons/planner.png') no-repeat;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align: bottom;
+
+}
+
+.lockscreen
+{
+	background:transparent url('../icons/lockscreen.png') no-repeat;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align: bottom;
+
+}
+
+.myprofile
+{
+	background:transparent url('../icons/myprofile.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+.plus
+{
+	background:url('../icons/plus.png') no-repeat ;
+	height:18px;
+	width:18px;
+	display:inline-block;
+	vertical-align: bottom;
+	
+}
+.edit
+{
+	background:url('../icons/edit.png') no-repeat ;
+	height:16px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+	
+}
+.editlarge
+{
+	background:url('../icons/editlarge.png') no-repeat ;
+	height:15px;
+	width:14px;
+	display:inline-block;
+	vertical-align: baseline;
+	
+}
+.back
+{
+	background:url('../icons/back.png') no-repeat ;
+	height:17px;
+	width:20px;
+	display:inline-block;
+	vertical-align: bottom;
+	
+}
+
+.info
+{
+	background:url('../icons/info.png') no-repeat ;
+	height:12px;
+	width:12px;
+	display:inline-block;
+	vertical-align: baseline;
+
+}
+.home
+{
+	background:url('../icons/home.png') no-repeat ;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+}
+.organisation
+{
+	background:url('../icons/organisation.png') no-repeat ;
+	height:13px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+}
+
+.blackInfo
+{
+	background:url('../icons/black_i.png') no-repeat ;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+
+}
+
+
+.down-arrow
+{
+	background:transparent url('../icons/down-arrow.png') no-repeat scroll right bottom;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+
+}
+
+.delete-icon
+{
+	background:transparent url('../icons/delete.png') no-repeat scroll left bottom;
+	height:18px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+
+.delete-icon-black
+{
+	background:transparent url('../icons/delete-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+.user-icon-black
+{
+	background:transparent url('../icons/user-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+.edit-icon-black
+{
+	background:transparent url('../icons/edit-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+.task-icon-black
+{
+	background:transparent url('../icons/task-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+.add-form
+{
+	background:transparent url('../icons/add-form.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.input-req
+{
+	background:transparent url('../icons/req.png') no-repeat scroll left bottom;
+	height:7px;
+	width:7px;
+	display:inline-block;
+	vertical-align:text-top;
+
+}
+.save-icon
+{
+	background:transparent url('../icons/save.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+.close-icon
+{
+	background:transparent url('../icons/close-black.png') no-repeat scroll left top;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+.calendar-icon
+{
+	background:url('../icons/calendar.png') no-repeat ;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	vertical-align: baseline;
+}
+.job
+{
+	background:url('../icons/job.png') no-repeat ;
+	height:12px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+	paddediting-right:3px;
+}
+.eye
+{
+	background:url('../icons/eye.png') no-repeat ;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+.gift
+{
+	background:url('../icons/gift.png') no-repeat ;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+.setup-icon
+{
+	background:url('../icons/setup.png') no-repeat ;
+	height:16px;
+	width:17px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+.login-icon
+{
+	background:url('../icons/login.png') no-repeat ;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: bottom;
+
+}
+
+.logout-icon-black
+{
+	background:url('../icons/logout-black.png') no-repeat ;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align: bottom;
+
+}
+.chosse-logo
+{
+	background:url('../icons/chosse-logo.png') no-repeat ;
+	height:18px;
+	width:18px;
+	display:inline-block;
+	vertical-align: bottom;
+	
+}
+
+.i-name
+{
+	background: #ffffff url('../icons/company.png') no-repeat scroll 8px 9px !important;
+}
+.i-username {
+	background: #ffffff url('../icons/myprofile.png') no-repeat scroll 8px 9px !important;
+}
+.i-password {
+	background: #ffffff url('../icons/lockscreen.png') no-repeat scroll 8px 10px !important;
+}
+.i-company {
+	background: #ffffff url('../icons/task-black.png') no-repeat scroll 8px 10px !important;
+}
+
+.clubmember-icon
+{
+	background:url('../icons/clubmember.png') no-repeat ;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+.account-icon
+{
+	background:url('../icons/account.png') no-repeat ;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+.settings
+{
+	background:url('../icons/settings.png') no-repeat ;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	vertical-align: bottom;
+}
+.file
+{
+	background:transparent url('../icons/file.png') no-repeat scroll left bottom;
+	height:16px;
+	width:16px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+

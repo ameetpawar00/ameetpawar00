@@ -1,0 +1,2 @@
+[27-Aug-2014 06:31:02 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/trifidre/public_html/hrm/masters/uploadocument/view.php:2) in /home/trifidre/public_html/hrm/include/conFig.php on line 1
+[25-Sep-2014 07:38:52 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/trifidre/public_html/hrm/masters/uploadocument/view.php:2) in /home/trifidre/public_html/hrm/include/conFig.php on line 1

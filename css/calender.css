@@ -1,0 +1,67 @@
+﻿.calender
+{
+	position:relative;
+}
+.calinner
+{
+	position:absolute;top:0px;left:5px;height:330px;width:200px;box-shadow:0px 0px 4px 1px #222;;
+}
+.calc-table th
+{
+	background:#fff !important;	
+	height:20px !important;
+	color:#222 !important;;
+	text-align:center !important;
+}
+
+.calc-table td
+{
+	background:#FFFFCC !important;
+	color:#b82121 !important;
+	border:1px #FFFF97 solid !important;
+	cursor:pointer !important;
+	height:20px !important;
+}
+
+
+.calc-table td:hover
+{
+	background:#FFCC00 !important;
+}
+
+.calc-table td.closeCalc
+{
+	background:#fff;
+	color:#b82121;
+	border:1px #FFFF97 solid;
+	cursor:pointer;
+}
+
+
+.calc-table td.closeCalc:hover
+{
+	background:#fff;
+}
+.inputHid 
+{
+	background:transparent;
+border:0px;
+font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12px;
+width:25px
+}
+.inputCal
+{
+background-color: #ffffff;
+font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+box-shadow:inset 0px 0px 1px 0px #222;
+outline: 0;
+font-size: 11px;
+font-weight: normal;
+color: #333333;
+background-color: #ffffff;
+padding: 5px;
+border:0px;
+
+}
+

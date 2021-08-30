@@ -1,0 +1,157 @@
+﻿.ffdiv
+{
+	background-color:#27a9e3;
+	margin-bottom:25px;
+	color:#FFF;
+	border-radius:5px;
+	cursor:pointer;
+}
+.fsdiv
+{
+	background-color:#28b779;
+	margin-bottom:25px;
+	color:#FFF;
+		border-radius:5px;
+			cursor:pointer;
+
+
+}
+.sfdiv
+{
+	background-color:#852b99;
+	margin-bottom:25px;
+	color:#FFF;
+		border-radius:5px;
+			cursor:pointer;
+
+
+}
+.ssdiv
+{
+	background-color:#ffb848;
+	margin-bottom:25px;
+	color:#FFF;
+		border-radius:5px;
+			cursor:pointer;
+
+
+}
+
+.noevent
+{
+	padding-top: 25px;
+	text-align: right;
+	font-size: 20px;
+	letter-spacing: -1px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.dashboard-stat {
+	min-height: 130px;
+  margin-bottom: 25px;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+.dashboard-stat:before,
+.dashboard-stat:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.dashboard-stat:after {
+  clear: both;
+}
+
+.dashboard-stat .visual {
+  width: 40%;
+  float: left;
+  text-align: center;
+  /*/height:80px;
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-left: 15px;*/
+}
+
+
+
+.dashboard-stat .details {
+	 width: 60%;
+	 float: left;
+ /* float: right;
+  padding-right: 10px;*/
+}
+
+.dashboard-stat .details .number {    
+  padding-top: 25px;
+  text-align: right;
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 10px;
+      padding-right: 10px;
+
+}
+
+.dashboard-stat .details .desc {
+  text-align: right;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: 300;
+  color: #fff;
+  padding-right: 10px;
+}
+
+ie8 .row-fluid [class*="span"] {
+    min-height: 20px !important;
+}
+
+.ie8 .row-fluid .breadcrumb > li {
+  margin-right: 1px;
+}
+.widget .row-fluid:last-child .tabbable-custom {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+#mytable{
+	
+	padding-bottom: 150px;
+}
+
+
+.span3.responsive {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.profile_view .dashboard-stat .visual i {
+    font-size: 120px;
+    padding-top: 10px;
+   color: rgba(255, 255, 255, 0.3);
+/*    color: #fff3;*/
+}
+
+.span3.responsive .dashboard-stat .visual i {
+  font-size: 70px;
+padding-top: 60%;
+color: #fff;
+opacity: 0.3;
+
+}
+.dashboard-stat:hover{
+opacity: .8;
+}
+.notinoti{
+margin: 10px;
+
+}

@@ -1,0 +1,184 @@
+﻿.SuccessBox {
+	display: none;
+	position: fixed;
+	left: 40%;
+	top: 20px;
+	text-align: center;
+	font-family: "Segoe UI",Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #222;
+	z-index: 2000000;
+	border-color: #F0C36D;
+	background-color: #F9EDBE;
+	padding: 6px 10px;
+	border: 1px #F0C36D solid;
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	width: auto;
+}
+.SubSuccessBox {
+	background: #F5E99D;
+	color: #222;
+	padding: 5px 10px;
+	text-align: left;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	display: block;
+	font-size: 11px;
+}
+#close {
+	float: right;
+	background: transparent url('../images/close.png') no-repeat scroll 0px 3px;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+.DetailBox {
+	background: transparent url('../images/bg-opacity.png') repeat;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.DetailBox #DetailSmallBox {
+	position: fixed;
+	top: 0%;
+	left: 1%;
+	background: #fff;
+	padding: 2px;
+	z-index: 2000000;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	width: 98%;
+	height: 500px;
+	text-align: left;
+}
+.bigMoodle {
+	background: transparent url('../images/bg-opacity.png') repeat;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	z-index: 3000;
+}
+.moodle {
+position:fixed;
+	z-index: 20000;
+	-webkit-box-orient: vertical;
+	-webkit-transition: 200ms -webkit-transform;
+	background: white;
+	box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0), 0 2px 6px rgba(0, 0, 0, 0);
+	color: #333;
+	display: -webkit-box;
+	width: 800px;
+	height: 500px;
+	padding: 0;
+	min-height: 700px;;
+	-moz-box-shadow: 0 0 8px #222;
+	-webkit-box-shadow: 0 0 8px #222;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin-top: 35px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	top:0px;
+	left:-1000px;
+	text-align:left;
+}
+.moodle #modHead {
+	background: #445F82;
+	padding: 5px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	position: fixed;
+	min-width: 490px;
+	margin-bottom: 20px;
+}
+.Supermoodle {
+	position: absolute;
+	left: 2%;
+	top: 10%;
+	border: 4px #445F82 solid;
+	background: #f7f7f7;
+	height: auto;
+	min-height: 200px;
+	max-height: 500px;
+	width: 1280px;
+	margin: 5px;
+	display: none;
+	overflow: auto;
+	z-index: 2000000;
+	overflow: scroll;
+}
+.Supermoodle #modHead {
+	background: #445F82;
+	padding: 5px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	position: fixed;
+	width: 1260px;
+	margin-bottom: 20px;
+}
+.WarningBox {
+	background: transparent url('../images/bg-opacity.png') repeat;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 200000;
+}
+.WarningBox #WarningSmallBox {
+	position: fixed;
+	top: 35%;
+	left: 35%;
+	background: #f7f7f7;
+	padding: 2px;
+	z-index: 200000;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+	width: 400px;
+	text-align: center;
+}
+.resultBox {
+	display: none;
+	position: fixed;
+	top: 0px;
+	z-index: 2000000;
+	left: 40%;
+	background: #fff;
+	color: #222;
+	padding: 5px;
+	box-shadow: 0px 0px 10px #000;
+}
+.WarningBox #WarningText {
+	color: maroon;
+}
+.errorhead {
+	background: #eee;
+	border: 1px #ddd solid;
+	border-bottom: 1px #999 solid;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+	font-size: 14px;
+	padding: 5px;
+	color: #b82121;
+}
+.information {
+	cursor: pointer;
+	background: transparent url('images/information.png') no-repeat;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}

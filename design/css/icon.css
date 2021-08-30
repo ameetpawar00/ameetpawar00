@@ -1,0 +1,145 @@
+﻿/*Icons */
+.edit
+{
+	background:url('../icons/edit.png') no-repeat ;
+	height:16px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+	
+}
+.editlarge
+{
+	background:url('../icons/editlarge.png') no-repeat ;
+	height:15px;
+	width:14px;
+	display:inline-block;
+	vertical-align: baseline;
+	
+}
+
+.info
+{
+	background:url('../icons/info.png') no-repeat ;
+	height:12px;
+	width:12px;
+	display:inline-block;
+	vertical-align: baseline;
+
+}
+.home
+{
+	background:url('../icons/home.png') no-repeat ;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+}
+.organisation
+{
+	background:url('../icons/organisation.png') no-repeat ;
+	height:13px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+}
+
+.blackInfo
+{
+	background:url('../icons/black_i.png') no-repeat ;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+
+}
+
+
+.down-arrow
+{
+	background:transparent url('../icons/down-arrow.png') no-repeat scroll right bottom;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	vertical-align: baseline;
+
+}
+
+.delete-icon-black
+{
+	background:transparent url('../icons/delete-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+.user-icon-black
+{
+	background:transparent url('../icons/user-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+.edit-icon-black
+{
+	background:transparent url('../icons/edit-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+
+.task-icon-black
+{
+	background:transparent url('../icons/task-black.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:top;
+
+}
+.add-form
+{
+	background:transparent url('../icons/add-form.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+
+}
+.input-req
+{
+	background:transparent url('../icons/req.png') no-repeat scroll left bottom;
+	height:7px;
+	width:7px;
+	display:inline-block;
+	vertical-align:text-top;
+
+}
+.save-icon
+{
+	background:transparent url('../icons/save.png') no-repeat scroll left bottom;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+.close-icon
+{
+	background:transparent url('../icons/close-black.png') no-repeat scroll left top;
+	height:15px;
+	width:20px;
+	display:inline-block;
+	vertical-align:bottom;
+}
+
+
+
+
+

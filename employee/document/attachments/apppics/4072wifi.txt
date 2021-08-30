@@ -1,0 +1,14 @@
+1.Open command promt(admin).
+2.C:\Windows\system32>netsh wlan set hostednetwork mode=allow ssid=testwifi key=12345678
+3.C:\Windows\system32>netsh wlan start hostednetwork
+4.C:\Windows\system32>netsh wlan show hostednetwork
+5.Right click on the network icon in the task bar and select network and sharing centre.
+6.Click change adapter settings.
+7.right click on ethernet and select properties then click sharing.
+8.Tick on allow other users to connect through the computer's internet connection.
+9.Then select local area connection just below from the drop down list.
+10.OK
+
+Enjoy your wifi hotspot..:))
+
+for video:http://www.youtube.com/watch?v=j_Nnzzu88gk

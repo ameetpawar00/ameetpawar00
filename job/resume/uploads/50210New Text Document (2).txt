@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WS-Slideshow 2</title>
+<style>
+body
+{
+margin:0px;
+overflow:hidden;
+background:#000;
+}
+</style>
+</style>
+</head>
+
+<body>
+
+	<div id="flashcontent" style="width:960px, height:700px">
+		<p>To use WS-Slideshow update your 
+	    <a href="http://www.adobe.com/go/getflashplayer" class="error">Flash Player Plugin</a>, 
+	    please. You have to install the version 10 or later.</p>
+	</div>
+
+	<script type="text/javascript" src="swfobject.js"></script>
+	<script type="text/javascript">
+	var width = 0, height = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    height = window.innerHeight;
+    width = window.innerWidth;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    height = document.documentElement.clientHeight;
+    width = document.documentElement.clientWidth;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    height = document.body.clientHeight;
+    width = document.body.clientWidth;
+  }
+		//  <![CDATA[	
+		var flashvars = {
+			XMLPath: "slides.xml"
+		};
+	
+		var params = {
+			quality: "best",
+			allowFullScreen: "true",
+			bgcolor: "#000000"
+		};
+		var attributes = {
+			id: "ws-slideshow",
+			name: "ws-slideshow"
+		};
+
+		swfobject.embedSWF(	"ws-slideshow.swf", 
+							"flashcontent", 
+							"100%", 
+							height,
+							"10.0",
+							null, 
+							flashvars, 
+							params, 
+							attributes);
+		// ]]>			
+	</script>
+
+</body>
+</html>
+
+
+
+
+Mr. Jitendra	 9884057916		 28,Aug
+Not Given	 9252538578	 Not Given	 23,Aug
+Mr.Vinay	 9935371020	 Not Given	 23,Aug
+Mr.Nitin	 9867662620	 Not Given	 23,Aug
+Mr.Vilkash	 7206888811	 Not Given	 23,Aug
+Mr. Dr. Khanuja	 9302122915	 Not Given	 23,Aug
+Mr.Manish	 9816426836	 Not Given	 23,Aug
+Mr.Kumar	 9795524286	 Not Given	 23,Aug
+Mr. Surendar	 9759957701	 Not Given	 23,Aug
+Miss. Geeta	 9166541561	 Not Given	 23,Aug
+Mr. Sushil	 9339383643	 Not Given	 23,Aug
+Mr. Pankaj	 9660214538	 Not Given	 23,Aug
+Mr. Rohit	 7737098817	 Not Given	 23,Aug
+Mr. Pankaj	 9136501143	 Not Given	 23,Aug
+Mr. Aehmad	 9582550622	 Not Given	 23,Aug
+Mr. Ramakant	 9460238722	 Not Given	 23,Aug
+Mr. Siddu	 9501200550	 Not Given	 23,Aug
+Mr. Soumyaranjan	 8895800454	 Not Given	 23,Aug
+Miss. Gitanjali	 9900062239	 Not Given	 23,Aug
+Mr. Hariom	 9811179356	 Not Given	 23,Aug
+Mr. Mukesh	 9416425444	 Not Given	 23,Aug
+Mr. Umaj	 9858735899	 Not Given	 23,Aug
+Mr. Yogendra	 9826020741	 Not Given	 23,Aug
+Mr. Manish	 9557625821	 Not Given	 23,Aug
+Mr. Chandrasekhar	 9840249992	 Not Given	 23,Aug
+Mr. Mukesh	 9891503628	 Not Given	 23,Aug
+Mr. Rakesh	 9027446061	 Not Given	 23,Aug
+Mr. Jeeva	 9600972013	 Not Given	 16,Aug
